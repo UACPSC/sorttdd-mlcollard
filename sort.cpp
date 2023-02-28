@@ -33,4 +33,11 @@ void sort(std::vector<int>& v) {
 
     order(v[1], v[2]);
     order(v[0], v[1]);
+
+    if (v.size() == 3)
+        return;
+
+    order(v[2], v[3]);
+    order(v[1], v[2]);
+    order(v[0], v[1]);
 }
